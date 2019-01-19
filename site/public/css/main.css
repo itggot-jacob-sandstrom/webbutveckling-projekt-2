@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+}
+
+body{
+margin: 0;
+
+height: 100vh;
+width: 100vw;
+}
+
+
+.wrapper{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(255, 43, 43);
+
+    grid-template-columns: auto;
+    grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%;
+
+    grid-template-areas: 
+        'header'
+        'varma'
+        'kalla'
+        'godis'
+        'bakverk';
+        
+}
+    
+
+header{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header > h1{
+color: green;
+}
+
+.varma, .kalla, .godis, .bakverk{
+    height: 22.5%;
+
+}
+
+.varma{
+    /* background-image:  */
+    background-color: brown;
+    grid-area: varma;
+    
+}
+
+.kalla{
+    background-color: salmon;
+    grid-area: kalla;
+    
+    
+}
+
+.godis{
+    background-color: chocolate;
+    grid-area: godis;
+    
+    
+}
+
+.bakverk{
+    background-color: yellow;
+    grid-area: bakverk;
+    
+    
+
+}

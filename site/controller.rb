@@ -1,10 +1,10 @@
-
+require 'byebug'
 
 
 
 
 # before do
-# require 'yaml'
+require 'yaml'
 
 # puts "before"
 # @data = YAML.load(File.read("data/dishes.yaml"))
@@ -24,10 +24,9 @@
 
 layout('layout.html.erb')
 
-before do
-    @data = {"dishes"=>[{"name"=>"Köttbullar", "category"=>"varm", "description"=>"bullar av kött", "recipes"=>[{"title"=>"Italienska köttbullar", "ingredients"=>[]}, {"title"=>"Mormors köttbullar", "ingredients"=>[]}]}, {"name"=>"Prinskorv", "category"=>"varm", "description"=>"korv gjorda på prins", "recipes"=>[{"title"=>"Goa körvar", "ingredients"=>["omg", "wtf", "lol"]}]}]}
-    @dish_names = @data["dishes"].map do |dish| 
-        dish["name"]
-    end
-    # p dish_names
+before "index.html.erb" do
+    data = YAML.load_file("data/dishes.yaml")
+    @hot_dishes = data['dishes']['varma']
+    @hot_dish_names = @hot_dishes.map { |dish| dish["name"] }
+
 end

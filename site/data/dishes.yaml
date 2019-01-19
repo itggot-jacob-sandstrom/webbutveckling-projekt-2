@@ -1,21 +1,27 @@
 ---
   dishes:
-  - name: Köttbullar
-    category: varm
-    description: bullar av kött
-    recipes:
-    - title: Italienska köttbullar
-      ingredients: []
-    - title: Mormors köttbullar
-      ingredients: []
-  - name: Prinskorv
-    category: varm
-    description: korv gjorda på prins
-    recipes:
-    - title: Goa körvar
-      ingredients:
-      - omg
-      - wtf
-      - lol
- 
+    varma:
+      - name: Köttbullar
+        category: varm
+        description: bullar av kött
+        recipes:
+        - title: Italienska köttbullar
+          ingredients: []
+        - title: Mormors köttbullar
+          ingredients: []
+      - name: Prinskorv
+        category: varm
+        description: korv gjorda på prins
+        recipes:
+        - title: Goa körvar
+          ingredients:
+          - omg
+          - wtf
+          - lol
+    kalla:
+
+    godis:
+
+    bakverk:
+      
         
