@@ -1,5 +1,5 @@
 *{
-    margin: 0;
+    /* margin: 0; */
 }
 
 body{
@@ -16,7 +16,7 @@ width: 100vw;
     background-color: rgb(255, 43, 43);
 
     grid-template-columns: auto;
-    grid-template-rows: 10% 22.5% 22.5% 22.5% 22.5%;
+    grid-template-rows: 15% 21.25% 21.25% 21.25% 21.25%;
 
     grid-template-areas: 
         'header'
@@ -29,19 +29,29 @@ width: 100vw;
     
 
 header{
-    height: 10%;
+    height: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header > h1{
-color: green;
+    color: green;
+    font-size: 4rem;
+}
+
+a{
+    color: white;
+    font-size: 2rem;
+    text-decoration: none;
 }
 
 .varma, .kalla, .godis, .bakverk{
-    height: 22.5%;
+    height: 21.25%;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .varma{
@@ -66,7 +76,7 @@ color: green;
 }
 
 .bakverk{
-    background-color: yellow;
+    background-color: rgb(42, 104, 1);
     grid-area: bakverk;
     
     

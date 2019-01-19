@@ -1,6 +1,6 @@
 ---
   dishes:
-    varma:
+    hot:
       - name: Köttbullar
         category: varm
         description: bullar av kött
@@ -18,10 +18,10 @@
           - omg
           - wtf
           - lol
-    kalla:
+    cold:
 
-    godis:
+    candy:
 
-    bakverk:
+    pastries:
       
         
