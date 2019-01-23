@@ -19,11 +19,11 @@ width: 100vw;
     grid-template-rows: 15% 21.25% 21.25% 21.25% 21.25%;
 
     grid-template-areas: 
-        'header'
-        'varma'
-        'kalla'
-        'godis'
-        'bakverk';
+        'header header'
+        'varma varma'
+        'kalla kalla'
+        'godis godis'
+        'bakverk bakverk';
         
 }
     
@@ -79,6 +79,30 @@ a{
     background-color: rgb(42, 104, 1);
     grid-area: bakverk;
     
-    
+}
 
+.contentbox{
+    width: 100vw;
+    min-height: 85vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ratter{
+    margin: 0;
+    background-color: rgb(0, 255, 98);
+    width: 50%;
+    height: 30vh;
+    /* border: solid 5px white; */
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.ratter h2{
+    color: white;
+    font-size: 2rem;
 }
