@@ -21,8 +21,8 @@
       - name: Jansons frestelse
 
       - name: Potatisgratäng
-      - name: Omelätt
-      - name: Svampstuvning
+      - name: Omelett
+      - name: Svamp stuvning
 
     cold:
       - name: Sill
@@ -30,7 +30,17 @@
       - name: 
 
     candy:
+      - name: Knäck
+      - name: Kola
+      - name: Mintkyssar
+      - name: Rischoklad
+      - name: Mozart kulor
+      - name: 
 
     pastries:
+      - name: Lussebullar
+      - name: Pepparkakor
+      - name: 
+      - name: 
       
         
