@@ -2,6 +2,7 @@
   dishes:
     hot:
       - name: Köttbullar
+        background: img/köttbullar1.jpg
         category: varm
         description: bullar av kött
         recipes:
@@ -10,6 +11,7 @@
         - title: Mormors köttbullar
           ingredients: []
       - name: Prinskorv
+        background: img/Prinskorv1.jpg
         category: varm
         description: korv gjorda på prins
         recipes:
@@ -18,15 +20,23 @@
           - omg
           - wtf
           - lol
-      - name: Jansons frestelse
+      - name: Janssons frestelse
+        background: img/Janssons1.jpg
 
       - name: Potatisgratäng
+        background: img/Potatis1.jpg
       - name: Omelett
-      - name: Svamp stuvning
+        background: img/Omelett1.jpg
+      - name: Svampstuvning
+        background: img/Svamp.jpg
 
     cold:
       - name: Sill
+        background: img/Prinskorv.jpg
       - name: Gravad lax
+        background: img/Prinskorv.jpg
+      - name: Julskinka
+        background: img/Prinskorv.jpg
       - name: 
 
     candy:

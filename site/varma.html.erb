@@ -3,13 +3,19 @@
 <header><h1>Varma rätter</h1></header>
 
 
+<% @hot_dishes.each_with_index do |dish, index| %>
+<!-- <p><%= dish %></p> -->
+
 <div class="contentbox">
 
-
-
+    <div class="ratter" style="background-image:url(<%= dish["background"] %>)"><h2><%= dish["name"] %></h2></div>
+    
+    <div class="dropdown">
+        <div class="description"><p><%= dish["description"] %></p></div>
+        <div class="recipes"></div>
+    </div>
+    
 </div>
+<% end %>
 
-    <% for dish in @hot_dish_names %>
-    <!-- <p><%= dish %></p> -->
-    <div class="ratter"><h2><%= dish %></h2></div>
-    <% end %>
+
