@@ -10,3 +10,4 @@ function registerContentBox(contentBox){
 
 let contentBoxes = document.querySelectorAll(".contentbox")
 contentBoxes.forEach(registerContentBox)
+
