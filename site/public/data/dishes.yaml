@@ -4,53 +4,157 @@
       - name: Köttbullar
         background: img/köttbullar1.jpg
         category: varm
-        description: bullar av kött
+        description: Köttbullar är små bollar av köttfärs, blandfärs, fläskfärs eller kycklingfärs, det vill säga malet kött av exempelvis nöt, gris, lamm, kyckling och/eller vilt. Smeten drygas vanligtvis ut med ägg och mjölk, ströbröd, potatismjöl eller havregryn. Ofta ingår lök, som man river ner i smeten. Kryddningen kan bestå av salt, svartpeppar eller kryddpeppar och ibland kanel. 
         recipes:
-        - title: Italienska köttbullar
-          ingredients: []
-        - title: Mormors köttbullar
-          ingredients: []
+          - title: Klassiska köttbullar
+            ingredients: 
+            - 2 dl mjölk
+            - 1 dl vispgrädde
+            - 1 1/2 dl ströbröd
+            - 1 kg blandfärs
+            - 2 tsk salt
+            - 2 - 3 krm nymalen vitpeppar
+            - 1/2 tsk socker
+            - 2 ägg
+            - 1 1/2 dl riven gul lök
+            - smör eller margarin (till stekning)
+            guide: 
+            - Blanda mjölk, grädde och ströbröd. Låt svälla ca 10 minuter. 
+            - Blanda färsen med salt, vitpeppar och socker tills färsen blir fast. Tillsätt äggen och blanda tills färsen blir fast igen. Rör i ströbrödsblandningen och löken.
+            - Skölj händerna med kallt vatten och forma små fina köttbullar. Stek några i taget i matfettet. Skaka pannan då och då så att köttbullarna rullar runt och håller sig runda.
+          - title: Mormors köttbullar
+            ingredients: 
+            - 1 kg blandfärs
+            - 1 dl ströbröd
+            - 3 dl matlagningsgrädde
+            - 3 msk senap
+            - 1 ägg
+            - 1 gul lök (finhackad och sauterad)
+            - salt och vitpeppar eller svartpeppar
+            guide: 
+              - Stek löken genomskinlig och mjuk. 
+              - Blanda matlagningsgrädden, senap och ströbrödet i en bunke. Låt svälla i 5-10 minuter
+              - Blanda ihop alla ingredienser tillsammans med gräddblandningen. Låt färsen stå och sätta sig ca 10 min.
+              - Rulla och stek i en panna med smör. 
       - name: Prinskorv
         background: img/Prinskorv1.jpg
         category: varm
-        description: korv gjorda på prins
+        description: Prinskorv är en liten korv (5-7 centimeter) som bland annat är populär på julbordet i Sverige. Prinskorv serveras oftast stekt och ofta med senap som tillbehör. På mindre charkuterier tillverkas fortfarande prinskorv hantverksmässigt och med naturtarm. 
         recipes:
-        - title: Goa körvar
-          ingredients:
-          - omg
-          - wtf
-          - lol
+          - title: Juliga körvar
+            ingredients:
+            - 2 pkt Scan Deli prinskorv à 240 g
+            - 1 msk Smör
+            - 1 Gul lök, hackad
+            - 1 tsk Kryddpeppar, mald
+            guide: Snitta ändarna på prinskorvarna. Stek korven i smöret tillsammans med löken och kryddpeppar i en stekpanna. Stek tills korven har fått fin färg och löken är mjuk.
       - name: Janssons frestelse
         background: img/Janssons1.jpg
-
+        description: Janssons frestelse är en gratäng av svenskt ursprung, gjord på potatis, lök och ansjovis (skarpsill). Den finns beskriven 1928 och kan ha namngetts efter en populär biograffilm. Även den matglade operasångaren Per Janzon kan ha inspirerat till namnet. 
+        recipes:
+          - title: Jansson
+            ingredients: 
+              - 3 stora gula lökar 
+              - 1 1/2 kg fast potatis 
+              - 2 msk smör eller margarin (att steka i)
+              - 3 burkar ansjovisfiléer (à 100 g) 
+              - 4 dl vispgrädde 
+              - 2 dl mjölk 
+              - 2 msk ströbröd 
+              - 3 msk smör eller margarin (att klicka över) 
+            guide: 
+              - Sätt ugnen på 175˚C.
+              - Skala lök och potatis. Skiva löken tunt och fräs den i matfettet i en stekpanna. Skär potatisen i tunna strimlor.
+              - Varva potatis, lök och ansjovis (spar ansjovisspadet) i en smord ugnssäker form (eller flera små). Potatis i botten och överst. Koka upp grädden och mjölken.
+              - Häll på gräddmjölken och allt ansjovisspad. Strö på ströbröd och klicka över matfettet.
+              - Grädda i nedre delen av ugnen 1 1/2-2 timmar.  Om den börjar få för mycket färg, täck med aluminiumfolie.
       - name: Potatisgratäng
         background: img/Potatis1.jpg
+        description: Gratäng (av franskans gratin med liknande uttal) är en maträtt som vanligen tillagas i ugn. Rätten kan understundom kallas låda eller pudding. Det franska verbet gratiner betyder grädda i ganska hög värme, till exempel under grill (griljera), för att få en gyllenbrun skorpa. Det är även relaterat till verbet gratter som betyder skrapa, riva. Begreppet gratinera kan även omfatta momentet att riva ost eller bröd och strö det på maträtten före gräddning. 
+        recipes:
+          - title: Klassisk gratäng
+            ingredients:
+              - 1 kg fast potatis 
+              - 2 gula lökar 
+              - 1 tsk salt 
+              - 2 krm svartpeppar 
+              - 3 dl grädde
+              - 2 dl mjölk
+            guide: 
+              - Sätt ugnen på 200°C.
+              - Skala och skiva potatisen tunt. Skala och hacka eller skiva löken.
+              - Blanda potatis, lök, salt och peppar i en bunke och häll ner i en ugnsäker form. Pressa ner potatisen och löken.
+              - Häll på mjölk och grädde. Sätt in formen i mitten av ugnen ca 70 min.
+              - Låt gratängen vila ca 5 minuter innan servering.
       - name: Omelett
         background: img/Omelett1.jpg
+        description: Omelett är en maträtt gjord på ägg, med eller utan andra ingredienser. Äggen vispas ihop till en smet som gräddas, vanligen bara på ena sidan, i en stekpanna eller ugn. Maträtten finns i olika varianter, med eller utan fyllning. 
+        recipes:
+          - title: Fransk omelett
+            ingredients:
+              - 4 ägg 
+              - 4 msk vatten 
+              - ½ tsk salt 
+              - 2 msk Arla® Svenskt Smör
+              - 200 g färska champinjoner 
+              - ev 1 vitlöksklyfta 
+              - 1 dl hackad färsk persilja 
+              - ½ tsk salt 
+              - 1 krm svartpeppar 
+            guide: 
+              - Skölj champinjonerna och skär dem i skivor. Skala och finhacka vitlöken. Fräs svamp och vitlök i smöret i en stekpanna ca 5 min. Rör ner persilja, salt och peppar. Håll varmt. 
+              - Vispa lätt ihop ägg, vatten och salt. Hetta upp smöret tills det blivit gyllenbrunt i en stekpanna. 
+              - Stek omelettsmeten på knapp medelvärme i stekpannan, ca 4 min. Rör försiktigt i äggsmeten några gånger under stektiden. 
+              - Omeletten är färdig när äggstanningen stannat men fortfarande är lite krämig på ytan. Lägg på champinjonerna.
       - name: Svampstuvning
         background: img/Svamp.jpg
+        description: Stuvning gjord på svamp
+        recipes:
+          - title: jansson
+            ingredients:
+            - ca 400 g svamp färsk
+            - 2-3 msk smör
+            - 2.5 msk vetemjöl
+            - 1.5 dl vispgrädde
+            - 1.5 dl mjölk 
+            - 0.5 tsk salt
+            - 1 tsk soja
+            - 0.5 krm finmalen vitpeppar
+            - ev. 2 st schalottenlökar
+            guide: 
+              - Rensa svampen. Borsta av jord och skräp och skär av fula kanter. Med burkkonserverad svamp hälls spadet av. Lägg svampen i en kastrull. Sätt på plattan på svag värme. Efter en stund börjar det fräsa, det är vattnet i svampen som börjar sippra ut.
+              - Låt det fräsa vidare och rör om lite då och då, om det bränner fast på bottnen av kastrullen, sänk värmen och/eller tillsätt någon tesked olja, smör eller en matsked vatten. När det fräst ett tag märker man att svamparnas volym blivit mycket mindre. Det beror på att vattnet sipprat ut. När vätskan nästan är borta, tillsätt smör och låt svampen steka ca 5-10 min tills det knäpper i den och fettet klarnar.
+              - Gör en redning genom att röra ut vetemjölet med lite av grädden (knappt 1 dl kan vara lagom) i en liten skål till en jämn blandning utan mjölklumpar. Häll på resten av grädden och mjölken på svampen. Tillsätt salt, peppar och ev. soja (om du vill ha lite färg) samt ev. finhackad schalottenlök. Låt koka upp, sänk värmen. Vispa ner redningen. Koka på svag värme ca 5 minuter. Smaka av med salt och peppar.
 
     cold:
       - name: Sill
         background: img/Prinskorv.jpg
+        description:
       - name: Gravad lax
         background: img/Prinskorv.jpg
+        description:
+      - name: Varmrökt lax
+        background: img/Prinskorv.jpg
+        description:
       - name: Julskinka
         background: img/Prinskorv.jpg
-      - name: 
+        description:
+      - name: Rödbetssallad
+        background:
+        description:
 
     candy:
       - name: Knäck
       - name: Kola
       - name: Mintkyssar
       - name: Rischoklad
-      - name: Mozart kulor
-      - name: 
+      - name: Mozartkulor
 
     pastries:
       - name: Lussebullar
       - name: Pepparkakor
-      - name: 
-      - name: 
+      - name: Mjuk pepparkaka
+      - name: Saffranskaka
+      - name: Kolakakor
       
         

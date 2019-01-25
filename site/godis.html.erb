@@ -1,0 +1,41 @@
+<header><h1>Godis</h1></header>
+
+
+<% @candy.each do |dish| %>
+
+
+    <div class="contentbox">
+
+        <div class="ratter" style="background-image:url(<%= dish["background"] %>)"><h2><%= dish["name"] %></h2></div>
+        
+        <div class="dropdown">
+            <div class="description"><p><%= dish["description"] %></p></div>
+
+            <% recipes = dish['recipes'] %>
+            <% unless recipes == nil %>
+                <% recipes.each do |recipe| %>
+                    <div class="recipes">
+                        <h3><%= recipe["title"] %></h3>
+                        <div class="ingredients">
+                            <% ingredients = recipe["ingredients"] %>
+                            <% ingredients.each do |ingredient| %>
+                                <p class="ingredient"><%= ingredient %></p>
+                            <% end %>
+                        </div>
+                        <div class="guide">
+                            <h4>Gör så här</h4>
+                            <% guide = recipe["guide"] %>
+                            <% if guide.kind_of?(Array) %>
+                                <% guide.each do |step| %>
+                                    <p class="step"><%= step %></p>
+                                <% end %>
+                            <% elsif guide != nil %>
+                                <p class="step"><%= guide %></p>
+                            <% end %>
+                        </div>
+                    </div>
+                <% end %>
+            <% end %>
+        </div>        
+    </div>
+<% end %>

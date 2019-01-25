@@ -1,42 +1,43 @@
-*{
-    /* margin: 0; */
-}
+
 
 body{
 margin: 0;
 
-height: 100vh;
+height: auto;
 width: 100vw;
 }
 
 
 .wrapper{
-    height: 100%;
+    min-height: 100vh;
+    height: auto;
     width: 100%;
     background-color: rgb(255, 43, 43);
 
-    grid-template-columns: auto;
-    grid-template-rows: 15% 1fr 1fr 1fr 1fr;
+   
+}
 
-    grid-template-areas: 
-        'header'
-        'varma'
-        'kalla'
-        'godis'
-        'bakverk';
-        
+h1, h2, h3, h4{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+
+}
+
+p{
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
 }
     
 
 header{
-    height: 15%;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header > h1{
-    color: green;
+    /* color: green; */
     font-size: 3rem;
 }
 
@@ -46,39 +47,38 @@ a{
     text-decoration: none;
 }
 
-.varma, .kalla, .godis, .bakverk{
-    height: 21.25%;
+#varma, #kalla, #godis, #bakverk{
+    height: 21.25vh;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
+
+    overflow: hidden;
 }
 
-.varma{
-    /* background-image:  */
-    background-color: rgb(189, 100, 41);
-    /* grid-area: varma; */
-    
+#varma{
+    /* background-color: rgb(189, 100, 41); */
+    background-image: url("../img/Köttbullar1.jpg");
 }
 
-.kalla{
-    background-color: salmon;
-    /* grid-area: kalla; */
-    
-    
+#kalla{
+    /* background-color: salmon;    */
+    background-image: url("../img/Janssons1.jpg");
 }
 
-.godis{
-    background-color: chocolate;
-    /* grid-area: godis; */
-    
-    
+#godis{
+    /* background-color: chocolate;     */
+    background-image: url("../img/Janssons1.jpg");
 }
 
-.bakverk{
-    background-color: rgb(42, 104, 1);
-    /* grid-area: bakverk; */
-    
+#bakverk{
+    /* background-color: rgb(42, 104, 1); */
+    background-image: url("../img/Janssons1.jpg");
 }
 
 /* .contentbox{
@@ -123,28 +123,105 @@ a{
     /* height: 0; */
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s;
+    transition: max-height 0.5s;
+    box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
 }
 
 .dropdown.activate{
     /* height: auto; */
-    max-height: 300px;
+    max-height: 2000px;
     /* display: block; */
     /* height: 100px; */
-
 
 }
 
 .description{
-    background-color: hotpink;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .description p{
+    margin: 10px 10px 10px 10px;
     padding: 20px;
-    color: white;
+
     border: white solid 2px;
+    border-radius: 3px;
     
+}
+
+.recipes{
+    border-top: rgb(156, 71, 71) solid 2px;
+}
+
+.recipes h3{
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.ingredients{
+    margin: 0 5px 0 5px;
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.ingredient{
+    border-radius: 10px;
+    padding: 5px;
+    border: white solid 2px;
+    margin: 5px 5px 5px 5px;
+    
+}
+
+.guide{
+    margin: 10px 10px 10px 10px;
+}
+
+.guide h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.index{
+    width: 100%;
+}
+
+
+@media only screen and (min-width: 800px){
+    .wrapper{
+        
+        display: flex;
+        flex-wrap: wrap;
+        /* grid-area: kalla; */
+        
+        
+    }
+
+    header{
+        width: 100%;
+    }
+    .contentbox{
+        width: 50%;
+        min-height: 40vh;
+        height: auto;
+    }
+    .ratter{
+        width: 100%;
+        height: 40vh;
+    }
+    .dropdown.activate{
+        background-color: red;
+        position: absolute;
+        top: 15vh;
+        max-height: 2000px;
+        /* display: block; */
+        /* height: 100px; */
+    
+    }
+
 }
