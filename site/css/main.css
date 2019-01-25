@@ -17,6 +17,7 @@ width: 100vw;
    
 }
 
+
 h1, h2, h3, h4{
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: white;
@@ -176,6 +177,7 @@ a{
     
 }
 
+
 .guide{
     margin: 10px 10px 10px 10px;
 }
@@ -187,6 +189,7 @@ a{
 
 }
 
+
 .index{
     width: 100%;
 }
@@ -197,10 +200,12 @@ a{
         
         display: flex;
         flex-wrap: wrap;
+
         /* grid-area: kalla; */
         
         
     }
+
 
     header{
         width: 100%;
