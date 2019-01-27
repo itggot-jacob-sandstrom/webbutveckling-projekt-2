@@ -5,6 +5,12 @@ margin: 0;
 
 height: auto;
 width: 100vw;
+
+
+}
+
+::-webkit-scrollbar{
+    display: none;
 }
 
 
@@ -12,7 +18,7 @@ width: 100vw;
     min-height: 100vh;
     height: auto;
     width: 100%;
-    background-color: rgb(255, 43, 43);
+    background-color: rgb(50, 50, 50);
 
    
 }
@@ -31,6 +37,7 @@ p{
     
 
 header{
+    background-color: red;
     height: 15vh;
     display: flex;
     justify-content: center;
@@ -69,17 +76,17 @@ a{
 
 #kalla{
     /* background-color: salmon;    */
-    background-image: url("../img/Janssons1.jpg");
+    background-image: url("../img/CuredSalmon.jpg");
 }
 
 #godis{
     /* background-color: chocolate;     */
-    background-image: url("../img/Janssons1.jpg");
+    background-image: url("../img/kola1.jpg");
 }
 
 #bakverk{
     /* background-color: rgb(42, 104, 1); */
-    background-image: url("../img/Janssons1.jpg");
+    background-image: url("../img/pepparkakor.jpg");
 }
 
 /* .contentbox{
@@ -132,7 +139,7 @@ a{
 .dropdown.activate{
 
     /* height: auto; */
-    max-height: 2000px;
+    max-height: 5000px;
     /* display: block; */
     /* height: 100px; */
 
@@ -204,9 +211,26 @@ a{
 
 
 .index{
+
     width: 100%;
 }
 
+.goup{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: aqua;
+    color: black;
+}
 
 @media only screen and (min-width: 800px){
     .wrapper{
@@ -219,8 +243,53 @@ a{
         
     }
 
+    .index{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 15vh 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "varma kalla"
+            "godis bakverk";
+            
+            margin: 0;
+    }
+
+    #varma, #kalla, #godis, #bakverk{
+        height: auto;
+        margin: 0;
+        /* position: absolute; */
+    
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: center;
+    
+        overflow: hidden;
+    }
+
+    #varma{
+        /* top: 15vh;
+        left: 0;
+        right: 50%;
+        bottom: 42.5%; */
+        grid-area: varma;
+    }
+    #kalla{
+        /* top: 15vh;
+        left: 50%;
+        right: 100%;
+        bottom: 42.5%; */
+        grid-area: kalla;
+    }
+    #godis{
+        grid-area: godis;
+    }
+    #bakverk{
+        grid-area: bakverk;
+    }
 
     header{
+        grid-area: header;
         width: 100%;
     }
     .contentbox{
@@ -244,12 +313,13 @@ a{
         left: 0;
         bottom: 0;
         right: 0;
-        min-height: 100vh;
-        max-height: 2000px;
+        min-height: 170vh;
+        height: auto;
+        max-height: 5000px;
         /* display: block; */
         /* height: 100px; */
-        padding-bottom: 1000px;
-        margin-bottom: -1000px;
+        padding-bottom: 2000px;
+        margin-bottom: -2000px;
     }
 
     .x{

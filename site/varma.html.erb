@@ -1,6 +1,6 @@
 
 
-<header><h1>Varma rätter</h1></header>
+<header id="header"><h1>Varma rätter</h1></header>
 
 
 <% @hot_dishes.each do |dish| %>
@@ -12,37 +12,40 @@
     
     <div class="x"><i class="material-icons">close</i></div>
     <div class="dropdown">
-            
-            <div class="description"><p><%= dish["description"] %></p></div>
-
+        
+        <div class="description"><p><%= dish["description"] %></p></div>
+        
             <% recipes = dish['recipes'] %>
             <% unless recipes == nil %>
-                <% recipes.each do |recipe| %>
-                    <div class="recipes">
-                        <h3 class="recipetitle"><%= recipe["title"] %></h3>
-                        <div class="ingredients">
-                            <h4>Ingredienser</h4>
-                            <% ingredients = recipe["ingredients"] %>
-                            <% ingredients.each do |ingredient| %>
-                                <p class="ingredient"><%= ingredient %></p>
-                            <% end %>
-                        </div>
-                        <div class="guide">
-                            <h4>Gör så här</h4>
-                            <% guide = recipe["guide"] %>
-                            <% if guide.kind_of?(Array) %>
-                                <% guide.each do |step| %>
-                                    <p class="step"><%= step %></p>
-                                <% end %>
-                            <% elsif guide != nil %>
-                                <p class="step"><%= guide %></p>
-                            <% end %>
-                        </div>
-                    </div>
-                <% end %>
+            <% recipes.each do |recipe| %>
+            <div class="recipes">
+                <h3 class="recipetitle"><%= recipe["title"] %></h3>
+                <div class="ingredients">
+                    <h4>Ingredienser</h4>
+                    <% ingredients = recipe["ingredients"] %>
+                    <% ingredients.each do |ingredient| %>
+                    <p class="ingredient"><%= ingredient %></p>
+                    <% end %>
+                </div>
+                <div class="guide">
+                    <h4>Gör så här</h4>
+                    <% guide = recipe["guide"] %>
+                    <% if guide.kind_of?(Array) %>
+                    <% guide.each do |step| %>
+                    <p class="step"><%= step %></p>
+                    <% end %>
+                    <% elsif guide != nil %>
+                    <p class="step"><%= guide %></p>
+                    <% end %>
+                </div>
+            </div>
+            <% end %>
             <% end %>
         </div>        
     </div>
-<% end %>
+    <% end %>
+    
+    
 
-
+    
+<a href="#header" class="goup"><i class="material-icons">arrow_upward</i></a>

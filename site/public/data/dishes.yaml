@@ -128,33 +128,43 @@
 
     cold:
       - name: Sill
-        background: img/Prinskorv.jpg
+        background: img/senapssill.jpg
         description:
       - name: Gravad lax
-        background: img/Prinskorv.jpg
+        background: img/CuredSalmon.jpg
         description:
       - name: Varmrökt lax
-        background: img/Prinskorv.jpg
+        background: img/HotSmokedSalmon.jpg.png
         description:
       - name: Julskinka
-        background: img/Prinskorv.jpg
+        background: img/Julskinka.jpg
         description:
       - name: Rödbetssallad
-        background:
+        background: img/Rödbetssallad.jpg
         description:
 
     candy:
       - name: Knäck
+        background: img/knäck.jpg
       - name: Kola
+        background: img/kola.jpg
       - name: Mintkyssar
+        background: img/mintkyssar.jpg
       - name: Rischoklad
+        background: img/rischoklad.jpg
       - name: Mozartkulor
+        background: img/mozartkulor.jpg
 
     pastries:
       - name: Lussebullar
+        background: img/lussebullar.jpg
       - name: Pepparkakor
+        background: img/pepparkakor.jpg
       - name: Mjuk pepparkaka
+        background: img/mjukPepparkaka.jpg
       - name: Saffranskaka
+        background: img/saffranskaka.jpg
       - name: Kolakakor
+        background: img/kolakakor.jpg
       
         
