@@ -260,7 +260,7 @@ a{
     
     .x.activate{
         position: absolute;
-        top: 30px;
+        top: 2vh;
         left: 30px;
         font-size: 5rem;
         color: white;
