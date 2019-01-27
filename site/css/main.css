@@ -126,14 +126,20 @@ a{
     overflow: hidden;
     transition: max-height 0.5s;
     box-shadow: inset 0px 5px 20px 0px rgba(0,0,0,0.75);
+    background-color: rgb(50, 50, 50);
 }
 
 .dropdown.activate{
+
     /* height: auto; */
     max-height: 2000px;
     /* display: block; */
     /* height: 100px; */
 
+}
+
+.x{
+    display: none;
 }
 
 .description{
@@ -169,6 +175,13 @@ a{
     display: flex;
     flex-wrap: wrap;
 }
+
+.ingredients h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .ingredient{
     border-radius: 10px;
     padding: 5px;
@@ -219,14 +232,85 @@ a{
         width: 100%;
         height: 40vh;
     }
+
+    .dropdown{
+        transition: max-height 0s;
+        /* min-height: 100px; */
+    }
+
     .dropdown.activate{
-        background-color: red;
         position: absolute;
         top: 15vh;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        min-height: 100vh;
         max-height: 2000px;
         /* display: block; */
         /* height: 100px; */
-    
+        padding-bottom: 1000px;
+        margin-bottom: -1000px;
     }
 
+    .x{
+
+        display: none;
+    }
+    
+    
+    .x.activate{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        font-size: 5rem;
+        color: white;
+        display: block;
+        /* z-index: 5; */
+        
+    }
+    
+    .material-icons{
+        font-size: 5rem;
+        color: rgb(255, 0, 0);
+        color: rgb(255, 255, 255);
+    }
+
+    .recipes{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+        grid-template-areas: 
+            "title title"
+            "ingredients guide";
+
+    }
+
+    .recipetitle{
+        grid-area: title;
+    }
+
+    .ingredients{
+        border: white 3px solid;
+        grid-area: ingredients;
+        display: block;
+        margin: 10px;
+        padding: 10px
+    }
+    
+    .ingredient{
+        border-radius: 0;
+        border: 0;
+
+        /* border-top: white 1px solid; */
+        border-bottom: white 1px solid;
+        /* margin: null; */
+    }
+    
+    .guide{
+        
+        border: white 3px solid;
+        grid-area: guide;
+        padding: 10px
+    }
+    
 }

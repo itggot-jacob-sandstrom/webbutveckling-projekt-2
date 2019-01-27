@@ -6,19 +6,22 @@
 <% @hot_dishes.each do |dish| %>
 
 
-    <div class="contentbox">
-
-        <div class="ratter" style="background-image:url(<%= dish["background"] %>)"><h2><%= dish["name"] %></h2></div>
-        
-        <div class="dropdown">
+<div class="contentbox">
+    
+    <div class="ratter" style="background-image:url(<%= dish["background"] %>)"><h2><%= dish["name"] %></h2></div>
+    
+    <div class="x"><i class="material-icons">close</i></div>
+    <div class="dropdown">
+            
             <div class="description"><p><%= dish["description"] %></p></div>
 
             <% recipes = dish['recipes'] %>
             <% unless recipes == nil %>
                 <% recipes.each do |recipe| %>
                     <div class="recipes">
-                        <h3><%= recipe["title"] %></h3>
+                        <h3 class="recipetitle"><%= recipe["title"] %></h3>
                         <div class="ingredients">
+                            <h4>Ingredienser</h4>
                             <% ingredients = recipe["ingredients"] %>
                             <% ingredients.each do |ingredient| %>
                                 <p class="ingredient"><%= ingredient %></p>
